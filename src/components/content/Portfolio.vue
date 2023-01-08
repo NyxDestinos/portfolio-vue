@@ -58,7 +58,7 @@
                                         <v-card-item v-if="work.showOverlay">
                                             <v-row>
                                                 <v-col class="align-center justify-center" cols="auto">
-                                                    <v-img :src="work.logo" contain width="100px" height="100px" v-if="windowWidth > 750"/>
+                                                    <v-img :src="'@' + work.logo" contain width="100px" height="100px" v-if="windowWidth > 750"/>
                                                 </v-col>
                                                 <v-col cols="auto">
                                                     <h1>{{ work.name.toUpperCase() }}</h1>
