@@ -1,13 +1,19 @@
 <template>
     <div ref="contact">
       <v-row justify="center" no-gutters>
+          <h2>CONTACT</h2>
+      </v-row>
+
+      &nbsp;<br>
+
+      <v-row justify="center" no-gutters>
         <v-icon
         class="icon-button"
         variant="text"
         icon="mdi-email"
         href="https://github.com/NyxDestinos"
         target="_blank"
-        ></v-icon> &nbsp;<a href="mailto:n.punprasitwech@gmail.com" :style="{ 'color':'white'}">n.punprasitwech@gmail.com</a>
+        ></v-icon>E-mail: &nbsp;<a href="mailto:n.punprasitwech@gmail.com" :style="{ 'color':'white'}">n.punprasitwech@gmail.com</a>
       </v-row>
 
       <v-row justify="center" no-gutters>
@@ -30,11 +36,11 @@
           ></v-btn>
       </v-row>
 
-       &nbsp;<br>
+      &nbsp;<br>
 
       <v-row justify="center" no-gutters>
           <h2>// Destinii</h2>
-        </v-row>
+      </v-row>
     </div>
 </template>
 

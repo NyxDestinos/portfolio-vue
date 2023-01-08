@@ -22,7 +22,7 @@
             icon="mdi-github"
             href="https://github.com/NyxDestinos"
             target="_blank"
-            :style="{'font-size': '1.5rem' }"
+            :style="{'font-size': windowWidth < 1000 ? '1.2rem' : '1.5rem' }"
           ></v-btn>
 
           <v-btn
@@ -31,7 +31,7 @@
             icon="mdi-linkedin"
             href="https://www.linkedin.com/in/nutthapon-punprasitwech/"
             target="_blank"
-            :style="{'font-size': '1.5rem' }"
+            :style="{'font-size': windowWidth < 1000 ? '1.2rem' : '1.5rem' }"
           ></v-btn>
         </p>
         <v-menu>
