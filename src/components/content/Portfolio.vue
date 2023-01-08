@@ -193,14 +193,14 @@ export default {
                                             <a href="https://destinos.itch.io/backtrack">Backtrack by destinos</a>
                                             </iframe>
                                         </p>`,
-          image: '../assets/img/backtrack/backtrack-banner.gif',
-          logo: '../assets/img/backtrack/backtrack-logo.png',
+          image: './assets/img/backtrack/backtrack-banner.gif',
+          logo: './assets/img/backtrack/backtrack-logo.png',
           gallery:
           [
-            { id: 0, path: '../assets/img/backtrack/backtrack-banner.gif' },
-            { id: 1, path: '../assets/img/backtrack/backtrack-1.png' },
-            { id: 2, path: '../assets/img/backtrack/backtrack-2.png' },
-            { id: 3, path: '../assets/img/backtrack/backtrack-3.png' }
+            { id: 0, path: './assets/img/backtrack/backtrack-banner.gif' },
+            { id: 1, path: './assets/img/backtrack/backtrack-1.png' },
+            { id: 2, path: './assets/img/backtrack/backtrack-2.png' },
+            { id: 3, path: './assets/img/backtrack/backtrack-3.png' }
           ]
         },
         {
@@ -224,14 +224,14 @@ export default {
                                         &emsp;&emsp;I worked on this project with a team of six members, serving as the game developer, game designer,
                                         and contributing to the art and client-server code. This project was completed as part of a software engineering course
                                         at Chulalongkorn University, and it took several months to complete a prototype version.`,
-          image: '../assets/img/meowquerade/meowquerade-banner.png',
-          logo: '../assets/img/meowquerade/meowquerade-logo.png',
+          image: './assets/img/meowquerade/meowquerade-banner.png',
+          logo: './assets/img/meowquerade/meowquerade-logo.png',
           gallery:
           [
-            { id: 0, path: '../assets/img/meowquerade/meowquerade-banner.png' },
-            { id: 1, path: '../assets/img/meowquerade/meowquerade-1.png' },
-            { id: 2, path: '../assets/img/meowquerade/meowquerade-2.png' },
-            { id: 3, path: '../assets/img/meowquerade/meowquerade-3.png' }
+            { id: 0, path: './assets/img/meowquerade/meowquerade-banner.png' },
+            { id: 1, path: './assets/img/meowquerade/meowquerade-1.png' },
+            { id: 2, path: './assets/img/meowquerade/meowquerade-2.png' },
+            { id: 3, path: './assets/img/meowquerade/meowquerade-3.png' }
           ]
         },
         {
@@ -273,13 +273,13 @@ export default {
                             picture-in-picture; web-share" allowfullscreen>
                             </iframe>
                         </p>`,
-          image: '../assets/img/glitcher/glitcher-banner.png',
-          logo: '../assets/img/glitcher/glitcher-logo.png',
+          image: './assets/img/glitcher/glitcher-banner.png',
+          logo: './assets/img/glitcher/glitcher-logo.png',
           gallery:
           [
-            { id: 0, path: '../assets/img/glitcher/glitcher-banner.png' },
-            { id: 1, path: '../assets/img/glitcher/glitcher-1.png' },
-            { id: 1, path: '../assets/img/glitcher/glitcher-2.png' }
+            { id: 0, path: './assets/img/glitcher/glitcher-banner.png' },
+            { id: 1, path: './assets/img/glitcher/glitcher-1.png' },
+            { id: 1, path: './assets/img/glitcher/glitcher-2.png' }
           ]
         }]
   }),
