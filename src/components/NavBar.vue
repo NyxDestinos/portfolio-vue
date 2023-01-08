@@ -15,7 +15,7 @@
         <!-- <button v-if="windowWidth > 900" class="menu-link" @click="() => switchLocale('en')">EN</button>
         <button v-if="windowWidth > 900" class="menu-link" @click="() => switchLocale('th')">TH</button> -->
 
-        <p>
+        <p v-if="windowWidth > 450">
           <v-btn
             class="icon-button"
             variant="text"
