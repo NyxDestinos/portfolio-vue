@@ -1,9 +1,24 @@
 {
   "main-content": {
     "name": "Nutthapon Punprasitwech",
-    "introduce": "As a computer science graduate with an interest in game development and artificial intelligence, I spent two years learning and developing games on my own. In addition, I dedicated time to studying the AI used in games, including reinforcement learning. My passion for these areas has driven me to constantly learn and improve my skills in these areas."
+    "introduce": "&emsp;&emsp;As a computer science graduate with an interest in game development and artificial intelligence, I spent two years learning and developing games on my own. In addition, I dedicated time to studying the AI used in games, including reinforcement learning. My passion for these areas has driven me to constantly learn and improve my skills in these areas."
   },
   "about-me": {
-    "text": "I am a junior game programmer currently working at Urnique Studio in Bangkok, Thailand. In addition to my full-time job, I am also pursuing freelance work in game development and web development. I am constantly learning and striving to expand my skillset and grow as a developer."
+    "text": "&emsp;&emsp;I am a junior game programmer currently working at Urnique Studio in Bangkok, Thailand. In addition to my full-time job, I am also pursuing freelance work in game development and web development. I am constantly learning and striving to expand my skillset and grow as a developer."
+  },
+  "experience": {
+    "urnique-intern": {
+      "description": "&emsp;&emsp;Urnique Studio is an independent game studio located in Thailand that has excellent connections to all relevant partners within Southeast Asia and the Global game industry.",
+      "bullet-1": "Developed and implemented game prototypes using Unity Engine, gaining valuable experience in game development.",
+      "bullet-2": "Designed new mechanics and content suitable for game prototypes.",
+      "bullet-3": "Collaborated with another intern to build a standalone prototype, enhancing teamwork and communication skills."
+    },
+    "urnique": {
+      "description": "&emsp;&emsp;After graduating from university, I continued to work at the same place where I completed my internship. This allowed me to transition smoothly into a full-time role and continue to grow and develop my skills in my chosen field.",
+      "bullet-1": "Implemented gameplay mechanics and features using Unity C# and Git.",
+      "bullet-2": "Improved the user interface and added form validation to enhance the player experience.",
+      "bullet-3": "Debugged and troubleshot issues to ensure smooth gameplay and a high-quality game.",
+      "bullet-4": "Stayed up-to-date with industry trends and best practices in game development."
+    }
   }
 }
