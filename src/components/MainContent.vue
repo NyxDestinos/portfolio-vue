@@ -1,12 +1,6 @@
 <template>
   <div>
     <div class="main-content">
-      <div ref="top">
-        <Top/>
-      </div>
-
-      <v-divider class="seperateLine"></v-divider>
-
       <div ref="about-me">
         <AboutMe/>
       </div>
@@ -40,7 +34,6 @@
 
 <script>
 import AboutMe from './content/AboutMe.vue'
-import Top from './content/Top.vue'
 import Skills from './content/Skills.vue'
 import Portfolio from './content/Portfolio.vue'
 // import Bio from './content/Bio.vue'
@@ -53,7 +46,6 @@ export default {
 
   components: {
     AboutMe,
-    Top,
     Skills,
     Portfolio,
     // Bio,

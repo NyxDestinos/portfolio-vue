@@ -1,62 +1,66 @@
 <template>
   <nav>
+    <v-navigation-drawer
+    v-model="drawer"
+    temporary
+    >
+      <v-list>
+        <v-list-item
+          v-for="link in links" :key="link.id"
+        >
+          <v-list-item-title class="menu-item" ref="menuLinks" @mouseover="setSelectedIndex(link.id)"
+          @click=scrollToContent(link.refId)
+          >
+          {{ link.text }}
+          </v-list-item-title>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+
     <v-app-bar app color="rgb(15, 52, 96)">
       <div class="navbar-left">
         <v-btn @click="() => scrollToContent('about-me')"><h1>// Destinii</h1></v-btn>
       </div>
 
-      <div class="navbar-right">
+      <div class="navbar-right" v-if="windowWidth > 1000">
         <li class="menu-item" v-for="link in links" :key="link.id">
-          <v-btn v-if="windowWidth > 1000" text class="text-white" ref="menuLinks" @mouseover="setSelectedIndex(link.id)" @click=scrollToContent(link.refId)>
+          <v-btn text class="text-white" ref="menuLinks" @mouseover="setSelectedIndex(link.id)" @click=scrollToContent(link.refId)>
             <span><h4>{{ link.text }}</h4></span>
           </v-btn>
         </li>
 
-        <!-- <button v-if="windowWidth > 900" class="menu-link" @click="() => switchLocale('en')">EN</button>
-        <button v-if="windowWidth > 900" class="menu-link" @click="() => switchLocale('th')">TH</button> -->
-
-        <p v-if="windowWidth > 450">
-          <v-btn
-            class="icon-button"
-            variant="text"
-            icon="mdi-github"
-            href="https://github.com/NyxDestinos"
-            target="_blank"
-            :style="{'font-size': windowWidth < 1000 ? '1.2rem' : '1.5rem' }"
-          ></v-btn>
-
-          <v-btn
-            class="icon-button"
-            variant="text"
-            icon="mdi-linkedin"
-            href="https://www.linkedin.com/in/nutthapon-punprasitwech/"
-            target="_blank"
-            :style="{'font-size': windowWidth < 1000 ? '1.2rem' : '1.5rem' }"
-          ></v-btn>
-        </p>
-        <v-menu>
-          <template v-slot:activator="{ props }">
-            <v-btn icon="mdi-dots-vertical"
-              v-if="windowWidth < 1000"
-              class="menu-item"
-              color="white"
-              v-bind="props"
-            >
-            </v-btn>
-          </template>
-          <v-list>
-            <v-list-item
-              v-for="link in links" :key="link.id"
-            >
-              <v-list-item-title class="menu-item" ref="menuLinks" @mouseover="setSelectedIndex(link.id)"
-              @click=scrollToContent(link.refId)
-              >
-              {{ link.text }}
-              </v-list-item-title>
-            </v-list-item>
-          </v-list>
-        </v-menu>
+        <button v-if="windowWidth > 1000" class="menu-link" @click="() => switchLocale('en')">EN</button>
+        <button v-if="windowWidth > 1000" class="menu-link" @click="() => switchLocale('th')">TH</button>
       </div>
+
+      <p v-if="windowWidth < 1000">
+          <v-menu>
+            <template v-slot:activator="{ props }">
+              <v-btn icon="mdi-earth"
+                v-if="windowWidth < 1000"
+                class="menu-item"
+                color="white"
+                v-bind="props"
+              >
+              </v-btn>
+            </template>
+            <v-list>
+              <v-list-item>
+                <v-list-item-title class="menu-item" ref="menuLinks" @click="() => switchLocale('en')">EN</v-list-item-title>
+              </v-list-item>
+              <v-list-item>
+                <v-list-item-title class="menu-item" ref="menuLinks" @click="() => switchLocale('th')">TH</v-list-item-title>
+              </v-list-item>
+            </v-list>
+          </v-menu>
+        </p>
+        <v-btn icon="mdi-menu"
+        v-if="windowWidth < 1000"
+        class="menu-item"
+        color="white"
+        @click.stop="drawer = !drawer"
+        >
+        </v-btn>
     </v-app-bar>
   </nav>
 </template>
@@ -66,6 +70,7 @@ import { emitter } from '../main.js'
 export default {
   data () {
     return {
+      drawer: null,
       windowWidth: 1001,
       windowHeight: 0,
       menuItems: [],

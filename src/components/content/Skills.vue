@@ -30,21 +30,20 @@
     <v-container grid-list-xs v-if="windowWidth >= 900">
       <h3>Game Programmer Intern</h3>
       Urnique Studio | May-July 2021 <br>
-      &emsp;&emsp;Urnique Studio is an independent game studio located in Thailand that has excellent connections to all relevant partners within Southeast Asia and the Global game industry.
-      <li>Developed and implemented game prototypes using Unity Engine, gaining valuable experience in game development.</li>
-      <li>Designed new mechanics and content suitable for game prototypes.</li>
-      <li>Collaborated with another intern to build a standalone prototype, enhancing teamwork and communication skills.</li>
+      <span v-html="$t('experience.urnique-intern.description')"></span>
+      <li><span v-html="$t('experience.urnique-intern.bullet-1')"></span></li>
+      <li><span v-html="$t('experience.urnique-intern.bullet-2')"></span></li>
+      <li><span v-html="$t('experience.urnique-intern.bullet-3')"></span></li>
 
       <p>&nbsp;</p>
 
       <h3>Game Programmer - Frontend</h3>
       Urnique Studio | June 2022 - Present <br>
-      &emsp;&emsp;After graduating from university, I continued to work at the same place where I completed my internship.
-      This allowed me to transition smoothly into a full-time role and continue to grow and develop my skills in my chosen field.
-      <li>Implemented gameplay mechanics and features using Unity C# and Git</li>
-      <li>Improved the user interface and added form validation to enhance the player experience</li>
-      <li>Debugged and troubleshot issues to ensure smooth gameplay and a high-quality game</li>
-      <li>Stayed up-to-date with industry trends and best practices in game development</li>
+      <span v-html="$t('experience.urnique.description')"></span>
+      <li><span v-html="$t('experience.urnique.bullet-1')"></span></li>
+      <li><span v-html="$t('experience.urnique.bullet-2')"></span></li>
+      <li><span v-html="$t('experience.urnique.bullet-3')"></span></li>
+      <li><span v-html="$t('experience.urnique.bullet-4')"></span></li>
       <p>&nbsp;</p>
     </v-container>
   </div>
